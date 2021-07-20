@@ -1,0 +1,47 @@
+#+TITLE: Clojure x Server SideRenderings
+* Our Goal
+rendering some components for SSR
+
+e.g.
+
+- og-tag for twitter / facebook
+- page footer
+
+* awesome examples
+** [DEAD?] with graalvm polygot (+ reagent or js/document)
+- https://nextjournal.com/kommen/react-server-side-rendering-with-graalvm-for-clojure
+
+  →  I think this tutorial is dead in the latest graaljs (ref. https://gitter.im/graalvm/graaljs?at=5d08cadaecc6a91b310fbb9a)
+
+** with reagent (+ re-frame)
+- https://github.com/babyjazz/reagent-ssr
+- https://github.com/yogthos/reagent-server-rendering
+- https://yogthos.net/posts/2015-11-24-Serverside-Reagent.html
+** with rum
+- https://github.com/clj-commons/citrus#server-side-rendering
+- https://github.com/tonsky/rum
+
+** with fulco
+
+* originals
+** with reagent (+ re-frame)
+
+* original project's constraint
+- license is *MIT*
+- initialize by ~lein new app <app name>~
+- use ~integrant~ for app management in Clojure
+- use ~luminus template~ for project structure
+
+
+* Tips
+** install graalvm
+If you didn't have graalvm, install latest graalvm (below commands is for linux)
+#+begin_src shell
+wget https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.1.0/graalvm-ce-java16-linux-amd64-21.1.0.tar.gz
+#+end_src
+
+ref: https://github.com/graalvm/graalvm-ce-builds/releases
+** check ogp
+use the below extention
+
+https://chrome.google.com/webstore/detail/localhost-open-graph-chec/gcbnmkhkglonipggglncobhklaegphgn

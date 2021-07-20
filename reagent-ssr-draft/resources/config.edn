@@ -1,0 +1,6 @@
+{:reagent-ssr.infrastructure.env/env {}
+ :reagent-ssr.infrastructure.logger/logger {:env #ig/ref :reagent-ssr.infrastructure.env/env}
+ :reagent-ssr.infrastructure.router.core/router {:env #ig/ref :reagent-ssr.infrastructure.env/env}
+ :reagent-ssr.infrastructure.server/server {:port 3040
+                                            :env #ig/ref :reagent-ssr.infrastructure.env/env
+                                            :router #ig/ref :reagent-ssr.infrastructure.router.core/router}}
